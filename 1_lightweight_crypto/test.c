@@ -3,8 +3,8 @@
 #include <string.h>
 
 #define FILENAME "../2_data/random_8KiB.dat"
-#define FILENAME "../2_data/random_64KiB.dat"
-#define FILENAME "../2_data/random_1MiB.dat"
+// #define FILENAME "../2_data/random_64KiB.dat"
+// #define FILENAME "../2_data/random_1MiB.dat"
 #define BUFFERSIZE 1024
 
 int crypto_aead_encrypt(
