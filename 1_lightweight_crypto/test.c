@@ -53,6 +53,8 @@ int main(void) {
   key = (unsigned char *)malloc(16*sizeof(unsigned char));
   ciphertext = (unsigned char *)malloc(BUFFERSIZE*sizeof(unsigned char));
   ciphertext_length = (unsigned long long *)malloc(1*sizeof(unsigned long long));;
+  plaintext_bis = (unsigned char *)malloc(BUFFERSIZE*sizeof(unsigned char));
+  plaintext_length_bis = (unsigned long long *)malloc(1*sizeof(unsigned long long));;
   nsec = (unsigned char *)malloc(1*sizeof(unsigned char));
   npub = (unsigned char *)malloc(1*sizeof(unsigned char));
   key = (unsigned char *)malloc(16*sizeof(unsigned char));
