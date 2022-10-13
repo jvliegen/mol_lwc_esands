@@ -32,7 +32,7 @@ int main(void) {
   unsigned char *plaintext;
   unsigned long long plaintext_length;
   unsigned char *plaintext_bis;
-  unsigned long long plaintext_length_bis;
+  unsigned long long *plaintext_length_bis;
 
   unsigned char *authenticated_data;
   unsigned long long authenticated_data_length;
@@ -108,7 +108,7 @@ int main(void) {
 
 
     /* Decrypt the ciphertext */
-    rv = crypto_aead_decrypt(plaintext_bis, &plaintext_length_bis,
+    rv = crypto_aead_decrypt(plaintext_bis, plaintext_length_bis,
       nsec,
       ciphertext, *ciphertext_length, 
       authenticated_data, authenticated_data_length,
